@@ -1,4 +1,4 @@
-# b2b-approvals
+# B2B Approvals
 
 A multi-tenant B2B web application for approving company requests (purchases, invoices, business trips, vacations).
 

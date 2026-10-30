@@ -61,3 +61,10 @@ Requirements for local development:
 
 _Coming soon._ Tests will run automatically in GitHub Actions on every pull request.
 
+   ## Git workflow
+
+   - `main` is the only permanent branch.
+   - One task = one branch (`feature/SCRUM-xx-short-name`) = one pull request.
+   - Commit messages start with the Jira key, for example `SCRUM-19: update README`.
+   - Merge to `main` only after a review.
+

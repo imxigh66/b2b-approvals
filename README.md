@@ -48,7 +48,6 @@ b2b-approvals/
 
 ## Getting started
 
-_Coming soon. Instructions will be added after the first runnable version._
 
 Requirements for local development:
 
@@ -56,6 +55,40 @@ Requirements for local development:
 - Node.js 24 (LTS)
 - Docker Desktop
 - Git
+
+
+### Database (PostgreSQL in Docker)
+
+1. Copy the example environment file and set your own password:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   On Windows PowerShell use `copy .env.example .env`. Then open `.env` and change `POSTGRES_PASSWORD`. Never commit the `.env` file.
+
+2. Start the database:
+
+   ```bash
+   docker compose up -d
+   ```
+
+3. Check that the container is healthy:
+
+   ```bash
+   docker compose ps
+   ```
+
+4. Stop the database (the data is kept in a Docker volume):
+
+   ```bash
+   docker compose down
+   ```
+
+   To delete the data as well and start from scratch, use `docker compose down -v`.
+
+Default connection settings (from `.env.example`): host `localhost`, port `5432`, database `b2b_approvals`, user `b2b_user`.
+
 
 ## Testing
 

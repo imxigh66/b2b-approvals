@@ -48,7 +48,6 @@ b2b-approvals/
 
 ## Getting started
 
-_Coming soon. Instructions will be added after the first runnable version._
 
 Requirements for local development:
 
